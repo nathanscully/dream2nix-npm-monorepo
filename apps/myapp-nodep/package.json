@@ -1,0 +1,9 @@
+{
+  "name": "@d2n/myapp-nodep",
+  "version": "1.0.0",
+  "scripts": {
+    "build": " rm -rf dist && tsc --build"
+  },
+  "bin": "app.js",
+  "type":"module"
+}

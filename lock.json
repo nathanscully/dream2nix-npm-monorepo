@@ -1,0 +1,18 @@
+{
+  "package-lock": {
+    "name": "@d2n/myapp-nodep",
+    "version": "1.0.0",
+    "lockfileVersion": 3,
+    "requires": true,
+    "packages": {
+      "": {
+        "name": "@d2n/myapp-nodep",
+        "version": "1.0.0",
+        "bin": {
+          "myapp-nodep": "app.js"
+        }
+      }
+    }
+  },
+  "invalidationHash": "2cc3c28cbfc29b703e518cdcb847e391578a470f4895d2f795eb9bd89c760f7b"
+}

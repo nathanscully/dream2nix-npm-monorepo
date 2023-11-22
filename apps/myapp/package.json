@@ -1,0 +1,12 @@
+{
+  "name": "@d2n/myapp",
+  "version": "1.0.0",
+  "scripts": {
+    "build": " rm -rf dist && tsc --build"
+  },
+  "bin": "app.js",
+  "dependencies": {
+    "@d2n/adder": "*"
+  },
+  "type":"module"
+}

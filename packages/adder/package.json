@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "@d2n/adder",
+  "version":"1.0.0",
+  "description": "Example shared function",
+  "scripts": {
+    "build": "rm -rf dist && tsc --build"
+  },
+  "dependencies": {
+    "typescript": "^5.3.2"
+  },
+
+  "type": "module",
+  "main": "dist/index.js"
+}
