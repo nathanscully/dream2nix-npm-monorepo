@@ -27,6 +27,20 @@
           ];
         };
 
+        myapp = dream2nix.lib.evalModules {
+          packageSets.nixpkgs =
+            inputs.dream2nix.inputs.nixpkgs.legacyPackages.${system};
+          modules = [
+            ./apps/myapp
+            {
+              paths.projectRoot = ./.;
+              # can be changed to ".git" or "flake.nix" to get rid of .project-root
+              paths.projectRootFile = "flake.nix";
+              paths.package = ./.;
+            }
+          ];
+        };
+
 
       in with pkgs; rec {
         # Development environment
@@ -36,7 +50,7 @@
         };
 
         packages = {
-          inherit myapp-nodep;
+          inherit myapp-nodep myapp;
           default = myapp-nodep;
         };
       });
